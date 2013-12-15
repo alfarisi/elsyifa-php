@@ -1,4 +1,5 @@
-phpmadani
-=========
+elSyifa PHP Framework
+=====================
 
-a PHP pramework, it's simple, fast and secure.
+Previously known as phpMadani.
+It's simple, fast and secure.
