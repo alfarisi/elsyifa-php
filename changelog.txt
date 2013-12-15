@@ -1,0 +1,30 @@
+###
+phpMadani v2.0
+02 April 2013
+
+- Rename folder 'module' to 'modules'
+- RainTPL support (default engine). Faster than patTemplate!
+- Update jQuery 1.9.1, jQuery UI 1.10.1
+- Move jquery.min.js to "js" folder
+- Add jQuery Migrate plugin
+- Add 'cache' folder (used by RainTPL)
+- Update example module (RainTPL implementation)
+
+###
+phpMadani v1.1
+06 June 2010
+
+- Upgrade jQuery to version 1.4.2
+- Add Captcha module
+- Add js/jsMadani.js
+- Add js/init.js
+- Add jQuery UI 1.8.1
+- Add jQuery validation plugin 1.6
+- Small modification to the default template (HTML, CSS, images)
+
+Database
+- Rename table `config` to `_config`
+
+###
+phpMadani v1.0-alpha
+29 May 2010

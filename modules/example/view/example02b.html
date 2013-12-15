@@ -1,0 +1,51 @@
+<h2>Data List</h2>
+
+{if condition="$msg_text"}
+	<div class="{$msg_css}">{$msg_text}</div><br />
+{/if}
+
+<form id="form-search" method="post" action="{$url_action}">
+	Name <input type="text" name="name" id="name" value="{$name}" />
+	<input type="submit" class="button" name="submit" value="Search" />
+</form><br />
+
+<table class="table-data" width="100%">
+	<thead>
+	<tr>
+		<th width="10">No.</th>
+		<th>Name</th>
+		<th>Address</th>
+		<th>Date of Birth</th>
+		<th>Telephone</th>
+		<th>Email</th>
+		<th>Other Information</th>
+	</tr>
+	</thead>
+	{loop="$datalist"}
+	<tr valign="top">
+		<td class="right">{$counter+1}.</td>
+		<td>{$value.name}</td>
+		<td>{$value.address}, {$value.city} {$value.postcode}</td>
+		<td class="center">{$value.dob}</td>
+		<td class="center">{$value.phone}</td>
+		<td class="center">{$value.email}</td>
+		<td>{$value.other_info}</td>
+	</tr>
+	{else}
+	<tr><td colspan="7" align="center"><em>-- Data not found --</em></td></tr>
+	{/loop}
+</table>
+
+<script type="text/javascript">
+<!--
+$(function() {
+	$('#name').focus();
+});
+
+$('#form-search').submit(function() {
+	var pageURL = '{$url_action}&type=component';
+	$.jsMadani.postFormData('#ui-tabs-3', pageURL, '#form-search');
+	return false;
+});
+-->
+</script>

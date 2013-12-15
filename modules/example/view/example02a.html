@@ -1,0 +1,92 @@
+<h2>Application Form</h2>
+
+{if condition="$msg_text"}
+	<div class="{$msg_css}">{$msg_text}</div>
+{/if}
+
+Please provide your details.<br /><br />
+
+<form id="app-form" method="post" action="{$url_action}">
+<table class="table-input">
+<tr>
+    <th class="right" style="width:10px;">1.</th>
+    <th style="width:175px;">Name</th>
+    <td><input type="text" name="name" id="name" class="required" size="30" maxlength="255" value="{$name}" /> </td>
+</tr>
+<tr>
+    <th class="right">2.</th>
+    <th>Address</th>
+    <td><input type="text" name="address" id="address" class="required" size="30" maxlength="255" value="{$address}" /> </td>
+</tr>
+<tr>
+    <th class="right">&nbsp;</th>
+    <th>City</th>
+    <td><input type="text" name="city" id="city" class="required" size="30" maxlength="100" value="{$city}" /> </td>
+</tr>
+<tr>
+    <th class="right">&nbsp;</th>
+    <th>Postal Code</th>
+    <td><input type="text" name="postcode" id="postcode" minlength="5" maxlength="6" class="digits required" size="6" value="{$postcode}" /> </td>
+</tr>
+<tr>
+    <th class="right">3.</th>
+    <th>Date of Birth</th>
+    <td><input type="text" name="dob" id="dob" class="required" readonly="readonly" size="10" value="{$dob}" /> </td>
+</tr>
+<tr>
+    <th class="right">4.</th>
+    <th>Telephone</th>
+    <td><input type="text" name="phone" id="phone" class="required" maxlength="50" value="{$phone}" /> </td>
+</tr>
+<tr>
+    <th class="right">5.</th>
+    <th>Email</th>
+    <td><input type="text" name="email" id="email" class="email" size="30" maxlength="100" value="{$email}" /> </td>
+</tr>
+<tr>
+    <th class="right top">6.</th>
+    <th class="top">Other supporting information</th>
+    <td><textarea name="other_info" id="other_info" maxlength="500" cols="50" rows="5">{$other_info}</textarea> </td>
+</tr>
+<tr>
+    <th>&nbsp;</th>
+    <th class="right">
+		<img src='./index.php?m=captcha&code={$randomcode}' alt='{$code}' />
+	</th>
+    <td>
+		<input type='hidden' id='randomcode' name='randomcode' value='{$randomcode}' />
+		<input type='text' id='captcha' name='captcha' size='6' class="required digits" minlength="6" maxlength="6" />
+		Validation Code
+	</td>
+</tr>
+<tr>
+    <td colspan="2">&nbsp;</td>
+    <td><input type="submit" class="button" name="submit" value="Submit" /></td>
+</tr>
+</table>
+</form>
+
+<script type="text/javascript">
+<!--
+$(function() {
+
+    $("#app-form").validate({
+		messages: {
+			postcode: "Please enter a valid Postal Code.",
+			captcha: "Please enter a valid code."
+		},
+		errorPlacement: function(error, element) {
+			error.appendTo( element.parent() );
+		}
+	});
+    
+    $('#dob').datepicker({
+        yearRange: "-70:-10",
+		defaultDate: "-70y",
+		changeMonth: true,
+		changeYear: true
+	});
+
+});
+-->
+</script>
