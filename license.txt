@@ -1,5 +1,5 @@
-phpMadani Community Edition
-Copyright (c) 2010, Al Farisi and Indokreatif Teknologi
+elSyifa PHP Framework
+Copyright (c) 2010-2013, Al Farisi and Indokreatif Teknologi
 All rights reserved
 
 

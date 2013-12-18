@@ -2,8 +2,6 @@
 
 class example extends output_html {
 
-	var $engine = 'rain';
-	
 	function process() {
 		$return['msg'] = madani::instance()->message_receive();
 		return $return;

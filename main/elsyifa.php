@@ -1,16 +1,18 @@
 <?php
 /*
 +----------------------------------------------------------------------------+
-|   Copyright (c) 2010 by Al Farisi
-|   E-mail  : elfarish@gmail.com
-|   Website : www.alfarisi.web.id
-|             www.indokreatif.net
+|   elSyifa PHP Framework
+|   Copyright 2010-2013, Al Farisi and Indokreatif Teknologi
+|   Website
+|   - http://www.indokreatif.net
+|   - https://github.com/alfarisi/elsyifa-php
+|   - http://alfarisi.web.id
 +----------------------------------------------------------------------------+
 */
 
 require_once ROOT_DIR . 'main/query.sql.php';
 
-class madani extends db {
+class elsyifa extends db {
 	
 	static $o = NULL;
 	

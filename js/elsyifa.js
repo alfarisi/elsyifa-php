@@ -1,6 +1,6 @@
 (function($) {
 
-$.jsMadani = {
+$.elsyifaJS = {
 
 	getData : function (div, pageURL) {
 		loader = "<div class='center'><img src='images/loader.gif' alt='Loading..' /></div>";

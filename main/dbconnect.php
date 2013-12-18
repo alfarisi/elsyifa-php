@@ -1,10 +1,12 @@
 <?php
 /*
 +----------------------------------------------------------------------------+
-|   Copyright (c) 2010 by Al Farisi
-|   E-mail  : elfarish@gmail.com
-|   Website : www.alfarisi.web.id
-|             www.indokreatif.net
+|   elSyifa PHP Framework
+|   Copyright 2010-2013, Al Farisi and Indokreatif Teknologi
+|   Website
+|   - http://www.indokreatif.net
+|   - https://github.com/alfarisi/elsyifa-php
+|   - http://alfarisi.web.id
 +----------------------------------------------------------------------------+
 */
 
@@ -21,25 +23,7 @@ $db->connect(
 $dbconn_id = $db->conn_id;
 
 if (!$dbconn_id) {
-    $exitmsg = "
-		<div align='center'><pre>
-
-
-There seems to be a problem with database connection.
-
-
----
-Al Farisi
-elfarish [at] gmail.com
-<a href='http://alfarisi.web.id' target='_blank'>www.alfarisi.web.id</a>
-
-
-Indokreatif Teknologi
-Technology Serving Humanity
-<a href='http://www.indokreatif.net' target='_blank'>www.indokreatif.net</a>
-		</pre></div>
-	";
-	
+    $exitmsg = "<div align='center'>There seems to be a problem with database connection.</div>";
 	exit($exitmsg);
 }
 

@@ -2,8 +2,6 @@
 
 class example02b extends output_html {
 	
-	var $engine = 'rain';
-	
 	function process() {
 		$obj = new ExampleModel;
 		$msg = madani::instance()->message_receive();

@@ -2,8 +2,6 @@
 
 class example01 extends output_html {
 	
-	var $engine = 'rain';
-	
 	function process() {
 		$obj = new ExampleModel;
 		
