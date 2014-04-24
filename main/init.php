@@ -1,10 +1,12 @@
 <?php
 /*
 +----------------------------------------------------------------------------+
-|   Copyright (c) 2010 by Al Farisi
-|   E-mail  : elfarish@gmail.com
-|   Website : www.alfarisi.web.id
-|             www.indokreatif.net
+|   elSyifa PHP Framework
+|   Copyright 2010-2014, Al Farisi and Indokreatif Teknologi
+|   Website
+|   - https://github.com/alfarisi/elsyifa-php
+|   - http://www.indokreatif.net
+|   - http://alfarisi.web.id
 +----------------------------------------------------------------------------+
 */
 
@@ -84,7 +86,7 @@ require_once ROOT_DIR . 'conf/config.php';
 
 require_once 'dbconnect.php';
 require_once ROOT_DIR . 'main/output.php';
-require_once ROOT_DIR . 'main/madani.php';
+require_once ROOT_DIR . 'main/elsyifa.php';
 
 session_start();
 

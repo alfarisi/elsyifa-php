@@ -29,7 +29,7 @@ class output_html {
 	}
 	
 	function main_template() {
-		$this->main_template_file = 'main/template/document';
+		$this->main_template_file = 'tpl/document';
 	}
 	
 	function set_template() {

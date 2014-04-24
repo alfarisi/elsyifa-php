@@ -5,10 +5,10 @@ class example01 extends output_html {
 	function process() {
 		$obj = new ExampleModel;
 		
-		$msg = madani::instance()->message_receive();
+		$msg = elsyifa::instance()->message_receive();
         
         if (empty($msg[0])) {
-            $conf_edit = madani::instance()->get_config();
+            $conf_edit = elsyifa::instance()->get_config();
         } else {
             $conf_edit['app_name'] = $msg[0]['app_name'];
             $conf_edit['app_version'] = $msg[0]['app_version'];

@@ -3,7 +3,7 @@
 class example02a extends output_html {
 
 	function process() {
-		$msg = madani::instance()->message_receive();
+		$msg = elsyifa::instance()->message_receive();
 		
 		if (!empty($msg[0])) {
             $data = $msg[0];
@@ -21,7 +21,7 @@ class example02a extends output_html {
 		
 		$return['msg'] = $msg;
 		$return['data'] = $data;
-		$return['captcha'] = madani::instance()->get_captcha();
+		$return['captcha'] = elsyifa::instance()->get_captcha();
 		
 		return $return;
 	}

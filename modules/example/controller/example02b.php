@@ -4,7 +4,7 @@ class example02b extends output_html {
 	
 	function process() {
 		$obj = new ExampleModel;
-		$msg = madani::instance()->message_receive();
+		$msg = elsyifa::instance()->message_receive();
 		
 		if (isset($_POST['name'])) {
 			$name = $_POST['name'];

@@ -3,7 +3,7 @@
 class example extends output_html {
 
 	function process() {
-		$return['msg'] = madani::instance()->message_receive();
+		$return['msg'] = elsyifa::instance()->message_receive();
 		return $return;
 	}
 	

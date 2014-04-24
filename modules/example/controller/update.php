@@ -19,12 +19,12 @@ class update extends output_none {
 		
 		
 		if ($ok) {
-			madani::instance()->message_send('example', 'example01', '', 'You have successfully updated', 'success');
+			elsyifa::instance()->message_send('example', 'example01', '', 'You have successfully updated', 'success');
 		} else {
-			madani::instance()->message_send('example', 'example01', $_POST, 'Update Failed..', 'warning');
+			elsyifa::instance()->message_send('example', 'example01', $_POST, 'Update Failed..', 'warning');
 		}
 		
-		madani::instance()->redirect('./index.php?m=example#ui-tabs-1');
+		elsyifa::instance()->redirect('./index.php?m=example#ui-tabs-1');
 		return $ok;
 	}
 	

@@ -2,10 +2,10 @@
 /*
 +----------------------------------------------------------------------------+
 |   elSyifa PHP Framework
-|   Copyright 2010-2013, Al Farisi and Indokreatif Teknologi
+|   Copyright 2010-2014, Al Farisi and Indokreatif Teknologi
 |   Website
-|   - http://www.indokreatif.net
 |   - https://github.com/alfarisi/elsyifa-php
+|   - http://www.indokreatif.net
 |   - http://alfarisi.web.id
 +----------------------------------------------------------------------------+
 */

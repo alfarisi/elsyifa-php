@@ -1,17 +1,19 @@
 <?php
 /*
 +----------------------------------------------------------------------------+
-|   Copyright (c) 2010 by Al Farisi
-|   E-mail  : elfarish@gmail.com
-|   Website : www.alfarisi.web.id
-|             www.indokreatif.net
+|   elSyifa PHP Framework
+|   Copyright 2010-2014, Al Farisi and Indokreatif Teknologi
+|   Website
+|   - https://github.com/alfarisi/elsyifa-php
+|   - http://www.indokreatif.net
+|   - http://alfarisi.web.id
 +----------------------------------------------------------------------------+
 */
 
 if (!defined('INIT_LOADED')) { exit; }
 
 if (!empty($_GET['m'])) {
-	$modul = madani::instance()->check_query($_GET['m']) ? $_GET['m'] : $sysconf['default_module'];
+	$modul = elsyifa::instance()->check_query($_GET['m']) ? $_GET['m'] : $sysconf['default_module'];
 } else {
 	$modul = $sysconf['default_module'];
 }
@@ -19,7 +21,7 @@ if (!empty($_GET['m'])) {
 define('MODULE', $modul);
 
 if (!empty($_GET['f'])) {
-	$sub_modul = madani::instance()->check_query($_GET['f']);
+	$sub_modul = elsyifa::instance()->check_query($_GET['f']);
 	if ($sub_modul) {
 		$modfile = ROOT_DIR.'modules/'.MODULE.'/controller/'.$sub_modul.'.php';
 		define('SUBMODULE', $sub_modul);

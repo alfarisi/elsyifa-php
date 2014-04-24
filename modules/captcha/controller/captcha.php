@@ -14,7 +14,7 @@ class captcha extends output_none {
 
 		$code = $_SESSION["{$obj->sysconf['cookie_name']}"]["captcha"]["code"];
 
-		$image = ImageCreateFromJPEG("images/code_bg.jpg");
+		$image = ImageCreateFromJPEG("tpl/images/code_bg.jpg");
 		$text_color = ImageColorAllocate($image, 70, 70, 70);
 
 		header("Content-type: image/jpeg");
